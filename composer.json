@@ -1,0 +1,39 @@
+{
+    "name": "sorokakostiantyn/cart",
+    "description": "Laravel 5 Shopping cart",
+    "keywords": ["laravel", "shopping cart", "cart"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Soroka Kostiantyn",
+            "email": "kosmailer@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*",
+        "illuminate/validation": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*",
+        "illuminate/translation": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^5.0",
+        "symfony/var-dumper": "2.7.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "SorokaKostiantyn\\": "src/SorokaKostiantyn"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SorokaKostiantyn\\Cart\\CartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "SorokaKostiantyn\\Cart\\Facades\\CartFacade"
+            }
+        }
+    }
+}
